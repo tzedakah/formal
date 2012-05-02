@@ -1,0 +1,86 @@
+/* Bootstrap CSS
+ * 
+ * Contains a basic setup for future applications.
+ *
+ */
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, blockquote, fieldset, legend, dl, dd, dt, table, td, th, caption {
+  font-family: Helvetica Neue, Helvetica, FreeSans, Arial, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #137381; }
+  a:hover {
+    color: #0c4b55; }
+  a:active {
+    position: relative;
+    top: 1px; }
+
+button, [type='submit'], [type='button'], .button {
+  border: 1px solid #105f6b;
+  background-image: -webkit-linear-gradient(top, bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  -webkit-transition-duration: 0.2s;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  background-color: #137381;
+  color: white;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: Helvetica, Arial, FreeSans, sans-serif; }
+  button:active, [type='submit']:active, [type='button']:active, .button:active {
+    -webkit-transition-duration: 0;
+    -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 1px; }
+  button:hover, [type='submit']:hover, [type='button']:hover, .button:hover {
+    opacity: 0.8; }
+
+blockquote {
+  background-color: #f3f3f3;
+  padding: 1em;
+  font-style: italic; }
+
+p, ol, ul, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; }
+
+p, li {
+  color: #333333;
+  line-height: 1.3; }
+  p code, li code {
+    background: #eeeeee; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.3em; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #eeeeee; }
+
+thead {
+  background-color: #eeeeee; }
+
+th, td {
+  padding: 5px;
+  text-align: left; }
+
+pre {
+  background: #eeeeee;
+  padding: 1em; }
+  pre code {
+    font-size: 100%; }
+
+pre, code {
+  font-family: "DejaVu Sans Mono", "Monaco", monospace;
+  font-size: 90%; }

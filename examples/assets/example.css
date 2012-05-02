@@ -1,0 +1,42 @@
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic");
+@import url("pygments.css");
+
+html,body,h1,h2,h3,h4,h5,h6,p,li,ol,ul,blockquote,fieldset,legend,dl,dd,dt,table,td,th,caption {
+  font-family: "PT Sans", sans-serif !important;
+}
+
+body {
+  background-color: #EDE4CA;
+  background-image: -webkit-radial-gradient(center, circle, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+a {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ol,ul {
+  margin-left: 1.4em;
+}
+
+#bucket {
+  margin: 30px auto;
+  background: #fff;
+  width: 640px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  border-radius: 2px;
+}
+
+#slogan {
+  margin-top: -1em;
+  color: #999;
+  font-style: italic;
+}
+
+h2 {
+  border-top: 1px solid #eee;
+  padding-top: .5em;
+}
+
+.highlight pre { background: inherit; }

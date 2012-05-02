@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Formal: FOOP object validation</title>
+    <link rel="stylesheet" href="assets/bootstrap.css" />
+    <link rel="stylesheet" href="assets/pygments.css" />
+    <link rel="stylesheet" href="assets/example.css" />
+  </head>
+  <body>
+    <div id="bucket">
+
+      <h1>Formal: FOOP object validation</h1>
+
+      <p>Formal is an object validator. It is aimed at form validation but it
+        will be able to validate regular JS objects.</p>
+
+      <h2>Install</h2>
+
+      <h3>Browser</h3>
+
+      <p>Include the following script inside your layout:</p>
+
+      <div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/path/to/formal.js&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+      <p>Don&#39;t forget to change the path accordingly.</p>
+
+      <h2>Usage</h2>
+
+      <p>To start validating your object, simply call:</p>
+
+      <div class="highlight"><pre><span class="nx">validator</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formal</span><span class="p">(</span><span class="nx">object</span><span class="p">);</span>
+</pre></div>
+
+      <p>Run the validation:</p>
+
+      <div class="highlight"><pre><span class="nx">validator</span><span class="p">.</span><span class="nx">run</span><span class="p">()</span>
+</pre></div>
+
+      <p>That&#39;s it! To check if it is just valid, call:</p>
+
+      <div class="highlight"><pre><span class="nx">validator</span><span class="p">.</span><span class="nx">valid</span><span class="p">()</span> <span class="c1">// returns a boolean</span>
+</pre></div>
+
+      <p>To see a list of errors, call:</p>
+
+      <div class="highlight"><pre><span class="nx">validator</span><span class="p">.</span><span class="nx">errors</span><span class="p">()</span>
+</pre></div>
+
+      </div>
+    </body>
+  </html>
