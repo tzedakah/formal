@@ -1,5 +1,4 @@
-exports = require "../../lib/rules/presence"
-Presence = exports.presence
+Presence = require "../../lib/rules/presence"
 
 describe "Presence", ->
   validator = null

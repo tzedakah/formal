@@ -14,4 +14,4 @@ class Numeric
   @condition: (attr)->
     !isNaN(parseFloat(attr))
 
-exports.numeric = Numeric
+module.exports = Numeric

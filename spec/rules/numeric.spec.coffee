@@ -1,5 +1,4 @@
-exports = require "../../lib/rules/numeric"
-Numeric = exports.numeric
+Numeric = require "../../lib/rules/numeric"
 
 describe "Numeric", ->
   validator = null

@@ -14,4 +14,4 @@ class Presence
   @condition: (attr)->
     attr != ''
 
-exports.presence = Presence
+module.exports = Presence
