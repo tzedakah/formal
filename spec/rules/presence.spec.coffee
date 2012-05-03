@@ -11,4 +11,4 @@ describe "Presence", ->
     expect(validator.valid()).toEqual false
 
   it "returns a message", ->
-    expect(validator.run().message).not.toEqual undefined
+    expect(validator.run().message).toBeDefined()
