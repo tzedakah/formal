@@ -1,7 +1,7 @@
 class Presence
-  constructor: (@attribute) ->
+  constructor: (@object, @attribute) ->
     @self = Presence
-    @self.message = "{{=name}} is required."
+    @self.message = "#{@attribute} is required."
     @status = null
 
   run: ->
@@ -9,9 +9,6 @@ class Presence
     @
 
   valid: ->
-    @self.condition(@attribute)
+    @object[@attribute] isnt ''
     
-  @condition: (attr)->
-    attr != ''
-
 module.exports = Presence

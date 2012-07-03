@@ -2,10 +2,16 @@ Presence = require "../../lib/rules/presence"
 
 describe "Presence", ->
   validator = null
+  object = null
 
   beforeEach ->
-    name = ""
-    validator = new Presence(name)
+    object = 
+      name: ""
+    validator = new Presence(object,"name")
+
+  it "validates good attributes", ->
+    object.name = "Something not empty"
+    expect(validator.valid()).toBeTruthy()
 
   it "invalidates empty attributes", ->
     expect(validator.valid()).toBeFalsy()
