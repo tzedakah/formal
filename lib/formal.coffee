@@ -4,8 +4,8 @@ class Formal
   @validate: ->
     @valid = true
 
-  @is_included_into: (klass) ->
-    klass.prototype.validate = Formal.validate
+  @is_included_into: (object) ->
+    object.__proto__.validate = Formal.validate
 
   @extends: (klass) ->
     klass.validate = Formal.validate

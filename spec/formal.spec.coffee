@@ -8,8 +8,8 @@ describe "Formal", ->
       constructor: (@attribute) ->
 
   it "is included in an object", ->
-    Formal.is_included_into Class
     object = new Class
+    Formal.is_included_into object
     expect(object.validate).toBeDefined()
 
   it "extends a object", ->
@@ -20,8 +20,8 @@ describe "Formal", ->
     object = null
 
     beforeEach ->
-      Formal.is_included_into Class
       object = new Class
+      Formal.is_included_into object
 
     it "validates an object with no validations", ->
       object.validate()
