@@ -20,22 +20,20 @@ Usage
 
 To start validating your object, simply call:
 
-    validator = new Formal(object, options);
-
-### Options available
+```javascript
+Formal.is_included_into(object);
+```
 
 Run the validation:
 
-    validator.run()
+```javascript
+object.validate();
+```
 
-That's it!
+That's it! It will return a `boolean`.
 
-To check if it is just valid, call:
+Roadmap
+-------
 
-    validator.valid() // returns a boolean
-
-To see a list of errors, call:
-
-    validator.errors()
-
-
+* Actually declare validations with `object.validates("rule", "attribute")`.
+* List of errors inside the object (`object.errors`).
