@@ -16,5 +16,9 @@ describe "Presence", ->
   it "invalidates empty attributes", ->
     expect(validator.valid()).toBeFalsy()
 
+  it "invalidates null attributes", ->
+    object.name = null
+    expect(validator.valid()).toBeFalsy()
+
   it "returns a message", ->
     expect(validator.run().message).toBeDefined()

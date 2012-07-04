@@ -9,6 +9,6 @@ class Presence
     @
 
   valid: ->
-    @object[@attribute] isnt ''
+    !@object[@attribute]? or @object[@attribute] isnt ''
     
 module.exports = Presence
