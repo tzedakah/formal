@@ -2,10 +2,12 @@ class Presence
   constructor: (@object, @attribute) ->
     @self = Presence
     @self.message = "#{@attribute} is required."
-    @status = null
+    @ok = true
 
   run: ->
-    @message = @self.message unless @valid()
+    unless @valid()
+      @message = @self.message
+      @ok = false
     @
 
   valid: ->
