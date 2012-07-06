@@ -2,10 +2,13 @@ class Numeric
   constructor: (@attribute) ->
     @self = Numeric
     @self.message = "{{=attribute}} is not a numeric."
+    @ok = true
     @
 
   run: ->
-    @message = @self.message unless @valid()
+    unless @valid()
+      @message = @self.message
+      @ok = false
     @
 
   valid: ->
