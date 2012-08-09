@@ -10,6 +10,3 @@ describe "Numeric", ->
 
   it "invalidates attributes that are not numbers", ->
     expect(validator.valid()).toEqual false
-
-  it "returns a message", ->
-    expect(validator.run().message).toBeDefined()

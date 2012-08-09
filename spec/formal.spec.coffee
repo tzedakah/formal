@@ -14,7 +14,7 @@ describe "Formal", ->
       object = new Class
       Formal.is_included_into object
 
-    it "is included in an object", ->
+    it "is included in that object", ->
       expect(object.validate).toBeDefined()
 
     it "allows to set validations", ->

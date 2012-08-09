@@ -7,14 +7,14 @@ describe "Presence", ->
   beforeEach ->
     object = 
       name: ""
-    validator = new Presence(object,"name")
+    validator = new Presence object,"name"
+
+  it "invalidates empty attributes", ->
+    expect(validator.valid()).toBeFalsy()
 
   it "validates good attributes", ->
     object.name = "Something not empty"
     expect(validator.valid()).toBeTruthy()
-
-  it "invalidates empty attributes", ->
-    expect(validator.valid()).toBeFalsy()
 
   it "invalidates null attributes", ->
     object.name = null
