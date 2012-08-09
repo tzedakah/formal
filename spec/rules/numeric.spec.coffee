@@ -4,8 +4,9 @@ describe "Numeric", ->
   validator = null
 
   beforeEach ->
-    number = "String"
-    validator = new Numeric number
+    object = 
+      number: "String"
+    validator = new Numeric object, "number"
 
   it "invalidates attributes that are not numbers", ->
     expect(validator.valid()).toEqual false
